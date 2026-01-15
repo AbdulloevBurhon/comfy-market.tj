@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="vsestili.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- nav main -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li><a href="./home.html">HOME</a></li>
+            <li><a href="./product.html">PRODUCTS</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+          </ul>
+
+          <img class="nav__logo" src="./img/comfy (4).png" alt="Comfy" />
+
+          <div class="nav__icons">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 svgKorzina imgKorzina"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- title main -->
+    <div class="mainPage">
+      <h2 class="container page">
+        <a href="./home.html">Home</a> /
+        <span> Products</span>
+      </h2>
+    </div>
+    <!-- main page  -->
+    <div class="layout">
+      <!-- Левая колонка -->
+      <aside class="sidebar">
+        <input class="sidebar__search" type="search" placeholder="Search..." />
+
+        <h3 class="sidebar__title">Company</h3>
+
+        <div class="sidebar__buttons"></div>
+
+        <div class="sidebar__range">
+          <input
+            type="range"
+            min="0"
+            max="10000"
+            value="10000"
+            class="inpRange"
+          />
+          <span id="valueRange">1000</span>
+        </div>
+      </aside>
+
+      <!-- Правая колонка -->
+      <section class="products">
+        <div class="cardBox">
+          <!-- ещё карточки -->
+        </div>
+      </section>
+    </div>
+    <script src="./api/main.js" type="module"></script>
+  </body>
+</html>
